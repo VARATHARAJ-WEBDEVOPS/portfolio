@@ -20,6 +20,7 @@
   cursor: pointer;
   display: flex;
   align-items: center;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .sun,
@@ -29,6 +30,7 @@
   position: absolute;
   top: 0;
   transition: transform 0.3s ease-in-out;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .moon {
@@ -222,8 +224,7 @@ section {
   }
 }
 
-.title,
-.about .aboutContent .rightMgsBoxContainer .rightMgsBox i {
+.title {
   animation: spin-vertically 5s ease-in-out infinite;
 }
 

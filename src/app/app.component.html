@@ -26,7 +26,7 @@
     [ngStyle]="{'background-image': !isDark ? 'url(\'/assets/images/pattern-light.png\')' : 'url(\'/assets/images/pattern-dark.png\')', 'opacity': isDark ? '0.3' : '0.9'}">
   </div>
   <div class="aboutTopic" style="z-index: 1; margin-top: 12vh;">
-    <h1 [style.color]="isDark ? '#ECEDF8' : 'black' " style="transition: 0.5s; display: flex; ">Ab<p class="title"
+    <h1 [style.color]="isDark ? '#ECEDF8' : 'black' " style="transition: 0.5s; display: flex; ">Ab<p 
         style="color: #fd1f4a;">ou</p>t</h1>
   </div>
   <div class="aboutContent">
@@ -70,7 +70,7 @@
     <div class="rightMgsBoxContainer">
       <div class="rightMgsBox"
         [ngStyle]="{'border': isDark ? '2px solid #fd1f4a' : '2px solid black', 'background-color': isDark ? 'transparent' : 'white', 'color': isDark ? '#fd1f4a' : 'black'}">
-        <p>Avilable to start immediately.</p>
+        <p>Available to start immediately.</p>
         <i class="bi bi-check-all"></i>
       </div>
     </div>
@@ -90,7 +90,7 @@
 <section class="skills" id="skills" [ngClass]="{'show-animate': isSectionVisible('skills')}">
   <div class="skillsTopic">
     <h1 style="display: flex;transition: 0.5s;" [style.color]="isDark ? '#ECEDF8' : 'black' ">Technic<p
-        style="color: #fd1f4a;" class="title">al&nbsp;S</p>kills</h1>
+        style="color: #fd1f4a;">al&nbsp;S</p>kills</h1>
   </div>
   <div class="skillsContent">
     <div class="row">
@@ -186,8 +186,7 @@
 <section style="height: 250vh ;" class="projects" id="projects"
   [ngClass]="{'show-animate': isSectionVisible('projects')}">
   <div class="projectTopic">
-    <h1 style="display: flex;transition: 0.5s;" [style.color]="isDark ? '#ECEDF8' : 'black' ">Pr<p
-        style="color: #fd1f4a;" class="title">o</p>jects</h1>
+    <h1 style="display: flex;transition: 0.5s;" [style.color]="isDark ? '#ECEDF8' : 'black' ">Proj<p style="color: #fd1f4a;">ec</p>ts</h1>
   </div>
   <div class="projectContent">
 
@@ -348,8 +347,9 @@
  <div class="mode-toggle" style="z-index: 100;">
    <input type="checkbox" id="mode-switch" class="toggle-input" (change)="toggleTheme()">
    <label for="mode-switch" class="toggle-label">
-     <img class="sun" src="./assets/images/sun.png" alt="Sun">
-     <img class="moon" style="filter: contrast(150%);" src="./assets/images/moon.png" alt="Moon">
+     <div class="sun" style="background-color: #ecb10f; border-radius: 50%;"></div>
+     <div class="moon" style="background-color:aliceblue; border-radius: 50%; filter: contrast(150%);"></div>
+
    </label>
  </div>
 </div>
@@ -402,46 +402,6 @@
   </div>
 </div>
 
-<div class="lapNav">
-  <ul>
-    <li class="list" [class.active]="activeLink === 'profile'">
-      <a (click)="setActiveLink('profile')" href="#profile">
-        <span class="icon">
-          <i class="bi bi-person"></i>
-        </span>
-      </a>
-    </li>
-    <li class="list" [class.active]="activeLink === 'about'">
-      <a (click)="setActiveLink('about')" href="#about">
-        <span class="icon">
-          <i class="bi bi-blockquote-left"></i>
-        </span>
-      </a>
-    </li>
-    <li class="list" [class.active]="activeLink === 'skills'">
-      <a (click)="setActiveLink('skills')" href="#skills">
-        <span class="icon">
-          <i class="bi bi-cpu"></i>
-        </span>
-      </a>
-    </li>
-    <li class="list" [class.active]="activeLink === 'projects'">
-      <a (click)="setActiveLink('projects')" href="#projects">
-        <span class="icon">
-          <i class="bi bi-code-slash"></i>
-        </span>
-      </a>
-    </li>
-    <li class="list" [class.active]="activeLink === 'contact'">
-      <a (click)="setActiveLink('contact')" href="#contact">
-        <span class="icon">
-          <i class="bi bi-phone-vibrate"></i>
-        </span>
-      </a>
-    </li>
-    <div class="indicator" [style.transform]="'translateX(' + indicatorPosition + ')'"></div>
-  </ul>
-</div>
 
 <h1 class="topText">Madurai - 625706  |  varathan2512002@gmail.com</h1>
 
